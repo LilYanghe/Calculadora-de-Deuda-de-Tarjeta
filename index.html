@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Deuda</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Deuda de Tarjeta</h1>
+
+        <div class="card">
+            <label>Saldo inicial ($):</label>
+            <input id="saldo" type="number" step="0.01" value="650" />
+
+            <label>Pago mensual ($):</label>
+            <input id="pago" type="number" step="0.01" value="50" />
+
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
