@@ -46,9 +46,13 @@ button:hover {
     background: #1a5ec8;
 }
 
+/* 🔥 Ajuste para evitar que el resultado alargue la página */
 #resultado {
     margin-top: 25px;
     padding: 15px;
     background: #eef4ff;
     border-radius: 10px;
+    max-height: 200px;        /* altura máxima */
+    overflow-y: auto;         /* scroll interno */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 }
